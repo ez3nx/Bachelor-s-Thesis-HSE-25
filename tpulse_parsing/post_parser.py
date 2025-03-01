@@ -140,7 +140,7 @@ class TinkoffPulseParser:
                 "parse_dt": get_dt(),
             }
             posts_data.append(post_data)
-        batch_insert("tcs_pulse_posts_sber", posts_data, db_name=self.db_name)
+        batch_insert("tcs_pulse_posts", posts_data, db_name=self.db_name)
 
     def parse_from_file(self, filename: str = "tickers.txt") -> List[ErrorLog]:
         """Парсит посты для списка тикеров из файла"""

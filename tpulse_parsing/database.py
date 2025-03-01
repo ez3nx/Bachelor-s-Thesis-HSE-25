@@ -111,4 +111,4 @@ def batch_insert(table: str, records: List[Dict], db_name: str = DATABASE_NAME):
             pass
 
 # Инициализация дефолтной БД при импорте модуля
-ensure_db_exists(DATABASE_NAME)
+# ensure_db_exists(DATABASE_NAME)
