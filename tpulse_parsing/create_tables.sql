@@ -1,6 +1,6 @@
 CREATE TABLE IF NOT EXISTS tcs_pulse_posts_sber (
     id integer PRIMARY KEY AUTOINCREMENT,
-    post_id text null,
+    post_id text UNIQUE,
     inserted text null,
     instruments text null,
     hashtags text null,
