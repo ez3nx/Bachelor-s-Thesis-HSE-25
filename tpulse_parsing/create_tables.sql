@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS tcs_pulse_posts_sber (
+CREATE TABLE IF NOT EXISTS tcs_pulse_posts (
     id integer PRIMARY KEY AUTOINCREMENT,
     post_id text UNIQUE,
     inserted text null,
