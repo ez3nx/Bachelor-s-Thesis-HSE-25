@@ -64,7 +64,7 @@ def plot_daily_posts(daily_counts, ticker):
     fig.show()
 
     
-def plot_posts_length(df, ticker):
+def plot_posts_length(df, ticker, col, x_label):
     # Установка стиля
     plt.style.use('seaborn')
     sns.set_palette("husl")
@@ -73,14 +73,14 @@ def plot_posts_length(df, ticker):
     plt.figure(figsize=(6, 3))
     sns.histplot(
         data=df,
-        x='words_cnt',
+        x=col,
         bins=20,
         color='#2ecc71'
     )
 
     # Кастомизация
     plt.title(f'Distribution of post lengths {ticker}', fontsize=13, pad=15)
-    plt.xlabel('Number of Words', fontsize=11)
+    plt.xlabel(f'{x_label}', fontsize=11)
     plt.ylabel('Count', fontsize=11)
 
     # Удаление верхней и правой границы
