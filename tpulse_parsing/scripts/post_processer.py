@@ -10,7 +10,7 @@ def preprocess_text_base(text):
     return text.strip()
 
 
-def preprocess_other_tickets(text, ticker_patterns):
+def preprocess_other_tickets(text, ticker, ticker_patterns):
 
     paragraphs = text.split("\n\n")
     processed_paragraphs = []
@@ -35,7 +35,7 @@ def preprocess_other_tickets(text, ticker_patterns):
                 )
 
                 has_other_ticker = bool(
-                    re.search(r"\{\$(?!SBER)[A-Z]+\}", current_sentence)
+                    re.search(fr"\{{\$(?!{ticker})[A-Z]+\}}", current_sentence)
                 )
 
                 if has_sber or not has_other_ticker:
