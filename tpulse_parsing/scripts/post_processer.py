@@ -35,7 +35,7 @@ def preprocess_other_tickets(text, ticker, ticker_patterns):
                 )
 
                 has_other_ticker = bool(
-                    re.search(fr"\{{\$(?!{ticker})[A-Z]+\}}", current_sentence)
+                    re.search(rf"\{{\$(?!{ticker})[A-Z]+\}}", current_sentence)
                 )
 
                 if has_sber or not has_other_ticker:
