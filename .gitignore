@@ -1,5 +1,7 @@
 .env
 .flake8
-__pycache__
+__pycache__/
+*.py[cod]
+*$py.class
 databases/
 processed_data/
