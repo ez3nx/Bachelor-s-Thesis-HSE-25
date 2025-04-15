@@ -1,5 +1,5 @@
 .env
 .flake8
-__pycache__/
+__pycache__
 databases/
 processed_data/
