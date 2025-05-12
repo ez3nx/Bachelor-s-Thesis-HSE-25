@@ -22,8 +22,8 @@ def plot_daily_posts(daily_counts, ticker):
             y=daily_counts["count"],
             mode="lines+markers",
             name="Публикации",
-            line=dict(color="#FF6B6B", width=2),
-            marker=dict(size=4, color="#FF6B6B"),
+            line=dict(color="#a3d1a5", width=2),  # #FF6B6B
+            marker=dict(size=4, color="#a3d1a5"),
         )
     )
 
