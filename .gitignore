@@ -5,3 +5,7 @@ __pycache__/
 *$py.class
 databases/
 processed_data/
+figures/
+*.csv
+*.png
+*.txt
